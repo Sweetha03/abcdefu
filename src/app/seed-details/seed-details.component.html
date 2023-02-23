@@ -1,0 +1,25 @@
+<img src="/assets/images/{{s.image}}" alt="Seed image" width="250px" height="250px">
+<h2 style="color: brown; font-style: italic;">{{s.seedName}} </h2>
+<table>
+    <tr>
+        
+        <td> 
+            
+            <p> {{<s></s>.about}} </p>
+            <hr/>
+            <span>Seed Price <span>{{<s></s>.price|currency}}    </span>  
+                <i *ngIf="s.discount>0"> 
+                    with {{s.discount}}% Off 
+                    <span *ngIf="s.discount>9">
+                        <b style="color: blue; font-family: Georgia, 'Times New Roman', Times, serif;"><u> Recommended</u></b>
+                    </span>
+                </i> 
+        
+            </span> 
+            <br/>
+           
+            
+        </td>
+        
+    </tr>
+</table>

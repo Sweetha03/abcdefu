@@ -1,0 +1,51 @@
+<!-- <div style="margin-left: 15%; width: 100%; height: 100%; margin-bottom: 20%;">
+    <form (ngSubmit)="doFormSubmit()" #SeedForm="ngForm">
+
+        <div class="form-group">
+            <label>Seed Id</label>
+            <input type="text" [(ngModel)]="s.seedId" class="form-control" id="sid" name="sid"
+                #seedId="ngModel" placeholder="Enter Seed Id" required pattern="[0-9][0-9][0-9]">
+                <div *ngIf="seedId.invalid">
+                    <span style="color: red;" *ngIf="seedId.errors?.['required']">
+                        Seed Id is required 
+                    </span>
+                </div>
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Seed Name</label>
+            <input type="text" [(ngModel)]="s.seedName" class="form-control" id="sname" name="sname"
+                #seedName="ngModel" placeholder="Enter Seed Name" required pattern="[0-9][0-9][0-9]">
+                <div *ngIf="seedName.invalid">
+                    <span style="color: red;" *ngIf="seedName.errors?.['required']">
+                        Seed Name is required 
+                    </span>
+                </div>
+        </div>
+
+       <br>
+        <div class="form-group">
+            <label>Types of Seeds</label>
+            <input type="text" class="form-control" id="typesOfSeeds" name="typesOfSeeds" placeholder="Types of Seeds" [(ngModel)]="s.typesOfSeeds">
+        </div>
+
+        <br/>
+        <div class="form-group">
+            <label>Seed Stock</label>
+            <input type="text" class="form-control" id="seedsStock" name="seedsStock" placeholder="Seed Stock" [(ngModel)]="s.seedsStock">
+        </div>
+
+        <br/>
+        <div class="form-group">
+            <label>Seeds Per Packet</label>
+            <input type="text" class="form-control" id="seedsPerPacket" name="seedsPerPacket" placeholder="Seeds Per Packet" [(ngModel)]="s.seedsPerPacket">
+        </div>
+
+        <br>
+        <div>
+            <button type="submit" class="btn btn-primary mb-2" [disabled]="SeedForm.form.invalid"  >Add Seeds</button>
+            
+        </div>
+    </form>
+
+ -->
